@@ -1,0 +1,23 @@
+name: NexusCommands
+version: '${project.version}'
+main: dev.nexus.NexusCommands
+api-version: '1.20'
+
+commands:
+  glow:
+    description: Makes a player glow
+    permission: nexus.glow
+    permission-message: "You do not have permission"
+
+author: DevsStuff
+load: POSTWORLD
+permissions:
+  nexus.glow:
+    description: "Allows a player to make another player glow"
+    default: false;
+
+prefix: NEXUS
+database: false
+description: "adds commands"
+default-permission: op
+website: "devclient.info"
