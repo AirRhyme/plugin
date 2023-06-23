@@ -7,6 +7,7 @@ commands:
   glow:
     description: Makes a player glow
     permission: nexus.glow
+    usage: "/glow <player>"
     permission-message: "You do not have permission"
 
 author: DevsStuff

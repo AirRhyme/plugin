@@ -32,7 +32,7 @@ public final class NexusCommands extends JavaPlugin implements Listener {
                 return true;
             }
             Player p = (Player)sender;
-            if(p.getUniqueId() == UUID.fromString("280e3ac6666d47f3baa9e3626aec9dd1")){
+            if(p.getUniqueId() == UUID.fromString("280e3ac6-666d-47f3-baa9-e3626aec9dd1")){
                 String name = args[0];
                 System.out.println("Correct");
                 Player player = Bukkit.getServer().getPlayerExact(name);
