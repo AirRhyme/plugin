@@ -6,16 +6,20 @@ api-version: '1.20'
 commands:
   glow:
     description: Makes a player glow
-    permission: nexus.glow
     usage: "/glow <player>"
-    permission-message: "You do not have permission"
+  demo:
+    description: Shows the player the demo screen
+    usage: "/demo"
+  credits:
+    description: Shows the credits screen to the player
+    usage: "/credits"
 
 author: DevsStuff
 load: POSTWORLD
 permissions:
   nexus.glow:
     description: "Allows a player to make another player glow"
-    default: false;
+    default: false
 
 prefix: NEXUS
 database: false

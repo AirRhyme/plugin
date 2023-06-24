@@ -1,0 +1,25 @@
+package dev.nexus.commands;
+
+import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
+
+public class demo implements CommandExecutor {
+
+    @Override
+    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
+
+        if(!(sender instanceof Player)){
+            sender.sendMessage("u r not playr");
+            return true;
+        }
+
+        Player p = (Player)sender;
+        p.showDemoScreen();
+        p.sendMessage(ChatColor.GREEN + "Now showing the demo screen");
+        return true;
+    }
+}

